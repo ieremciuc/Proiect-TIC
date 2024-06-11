@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair%20Display&display=swap%27');
+
+   .content {
+  max-width: 80%;
+  margin: auto;
+  padding-top: 8px;
+}
+
+body {
+  background-color: #1a1a1c;
+}
+
+h1{
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+}
+
+p {
+  font-family: 'Playfair Display', serif;
+  color: white;
+  text-align: left;
+}
+
+a {
+  font-family: 'Playfair Display', serif;
+  color: white;
+  text-align: left;
+}
+
+li {
+  float: left;
+}
+
+li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #323236;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #111012;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.top-left {
+  position: absolute;
+  top: 20%;
+  left: 3%;
+  font-family: 'Playfair Display', serif;
+  font-size: 35px;
+  font-style: italic;
+  color: white;
+  text-align: left;
+  text-shadow: 0px 0px 20px #000000,
+  0px 0px 20px #000000,
+  0px 0px 20px #000000;
+}
+
+.bottom-left {
+  position: absolute;
+  top: 40%;
+  left: 3%;
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  font-style: italic;
+  color: white;
+  text-align: left;
+  text-shadow: 0px 0px 20px #000000,
+  0px 0px 20px #000000,
+  0px 0px 20px #000000;
+}
+
+.top-right {
+  position: absolute;
+  top: 20%;
+  right: 3%;
+  font-family: 'Playfair Display', serif;
+  font-size: 35px;
+  font-style: italic;
+  color: white;
+  text-align: left;
+  text-shadow: 0px 0px 20px #000000,
+  0px 0px 20px #000000,
+  0px 0px 20px #000000;
+}
+
+.bottom-right {
+  position: absolute;
+  top: 40%;
+  right: 3%;
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  font-style: italic;
+  color: white;
+  text-align: left;
+  text-shadow: 0px 0px 20px #000000,
+  0px 0px 20px #000000,
+  0px 0px 20px #000000;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.sticky{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 8;
+  z-index: 1;
+}
+
+.green{
+  color: #1E870D
+}
+
+.red{
+  color: #B52323
+}
+
+/* Totalmente nu cod copiat de pe W3Schools */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover {
+  background-color: rgba(30,135,13,0.6);
+}
+
+.next:hover {
+  background-color: rgba(181,35,35,0.6);
+}
+
+/* Caption text */
+.slideshow-text {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 35px;
+  font-style: italic;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 20%;
+  left: 3%;
+  width: 100%;
+  text-align: left;
+  text-shadow: 0px 0px 20px #000000,
+  0px 0px 20px #000000,
+  0px 0px 20px #000000;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.footer {
+	background-color: #111012;
+	color: #fff;
+	padding: 20px 0;
+	text-align: center;
+}
+.footer a {
+	color: #30bf19;
+	text-decoration: none;
+}
+.footer a:hover {
+	text-decoration: underline;
+}
+.footer .social-icons a {
+	margin: 0 10px;
+}
+.footer .social-icons i {
+	font-size: 24px;
+}

@@ -1,0 +1,112 @@
+<html>
+	<head>
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+		<title>Mediterana | Acasă</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	</head>
+	<body>
+	<div class="sticky">
+	<ul>
+		<li style="bold"><a href="#acasa">ACASĂ</a></li>
+		<li style="bold"><a href="meniu.html">MENIU</a></li>
+		<li style="bold"><a href="#poveste">POVESTEA NOASTRĂ</a></li>
+		<li style="bold"><a href="#livrare">LIVRARE</a></li>
+	</ul>
+	</div>
+	<a id="acasa"></a>
+	<img src="images/mediterana.png" alt="sigla" style="width: 490; height: 117; padding: 20px" class="center">
+	<div class="content">
+	<!-- Slideshow -->
+	<div class="slideshow-container">
+	  <div class="mySlides fade">
+		<img src="images/slideshow/pizza.jpg" style="width:100%; height=337px; object-fit: cover;">
+		<div class="slideshow-text">Gustul autentic al Italiei în fiecare farfurie!</div>
+	  </div>
+
+	  <div class="mySlides fade">
+		<img src="images/slideshow/pizzawow.jpg" style="width:100%; height=337px; object-fit: cover;">
+		<div class="slideshow-text">Arome autentice, pizza diversificată!</div>
+	  </div>
+
+	  <div class="mySlides fade">
+		<img src="images/slideshow/garfield.png" style="width:100%; height=337px; object-fit: cover;">
+		<div class="slideshow-text">Aici, când trebuie să hrănești mai multe guri!</div>
+	  </div>
+
+	  <!-- Butoane faine -->
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+	<script>
+	let slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  let i;
+	  let slides = document.getElementsByClassName("mySlides");
+	  let dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+	</script>
+	<!--
+		<div class="container">
+		<img src="images/pizza.jpg" alt="pizza" style="opacity: 0.75; width: 100%; height: 337px; object-fit: cover;">
+		<div class="center-left">Gustul autentic al Italiei în fiecare farfurie!</div>
+		</div>
+	!-->
+	<h1 style="color:#1E870D">Destinul nostru</h1>
+	<p>La Mediterana, am crezut mereu că mâncarea este mai mult decât o simplă necesitate; este o expresie a pasiunii, tradiției și inovației. Destinul nostru este să aducem un colț din Italia la tine acasă, prin preparate autentice care îmbină prospețimea ingredientelor locale cu rețetele tradiționale italiene. Fiecare fel de mâncare pregătit în bucătăria noastră reflectă angajamentul nostru pentru excelență și dorința de a oferi o experiență culinară de neuitat.
+	<br><br>
+	Ne-am propus să transformăm fiecare vizită la Mediterana într-o călătorie gastronomică pe coasta însorită a Italiei, unde gusturile mediteraneene se întâlnesc într-o simfonie perfectă. Prin respectarea tradițiilor culinare și inovația continuă, ne dorim să fim locul unde familia și prietenii se adună pentru a celebra viața și bucuriile ei simple. La Mediterana, nu servim doar mâncare, ci creăm amintiri și povești pe care să le păstrezi pentru totdeauna. </p>
+	<a id="poveste"></a>
+	<br>
+	<h1 style="color:#B52323">Povestea nostră</h1>
+	<p>Restaurantul Mediterana și-a deschis pentru prima dată porțile în 1999, în orașul Suceava, cu scopul de a aduce savoarea autentică a bucătăriei mediteraneene în inimile românilor. De la început, Mediterana s-a remarcat prin atenția deosebită acordată ingredientelor proaspete și rețetelor tradiționale, devenind rapid un loc preferat pentru iubitorii de gastronomie rafinată.
+	<br><br>
+	Pe parcursul anilor, restaurantul Mediterana a fost recunoscut și apreciat atât de către clienți, cât și de experți din domeniu, câștigând numeroase premii în diverse categorii. Aceste distincții au venit ca o confirmare a dedicării noastre pentru excelență culinară și a eforturilor constante de a oferi o experiență unică fiecărui oaspete.
+	<br><br>
+	Astăzi, Mediterana nu este doar un loc unde poți savura preparate delicioase, ci și un simbol al ospitalității și al tradiției mediteraneene, continuând să inspire și să bucure toți cei care ne trec pragul.</p>
+	<br>
+	<a id="livrare"></a>
+	<h1>Livrare</h1>
+	<p>Pentru comenzile din Suceava, minim 10 lei</p>
+	<p>Pentru comenzile din afara Sucevei, minim 30 lei</p>
+	<p>Pentru comenzile din Mihoveni, minim 1.000 lei</p>
+	<p>Pentru comenzile din Ițcani, minim 10.000.000.000.000 lei</p>
+	</div>
+	</div>
+	<footer class="footer">
+       <div class="container">
+            <p style="text-align: center">&copy; 2024 Mediterana. Toate drepturile rezervate.</p>
+            <p style="text-align: center">7 Strada Brodocului, Mihoveni, Suceava • 82 Strada Narciselor, Suceava, Suceava</p>
+            <p style="text-align: center">Telefon: +40 752 763 513 • +40 749 531 904 | Email: <a href="mailto:palade.andrei@scoala3sv.ro">info@mediterana.com</a></p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/mediterana" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com/mediterana" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/mediterana" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/mediterana" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.google.com/maps/place/Cimitirul+Orthodox/@47.6777312,26.1837006,19.04z/data=!4m6!3m5!1s0x4734ff3cdcde0ec9:0x3469fbf9f0210731!8m2!3d47.6779906!4d26.1840463!16s%2Fg%2F11_svpcs0?entry=ttu" target="_blank"><i class="fa-solid fa-map"></i></a>
+            </div>
+        </div>
+    </footer>
+	</body>
+</html>
